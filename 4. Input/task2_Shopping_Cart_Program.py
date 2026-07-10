@@ -1,0 +1,8 @@
+print("Shopping Cart Program")
+item = input("What item do you like? : ")
+price =float(input("What is the price? : "))
+quantity = int(input("How many items do you like? : "))
+print("Your item is " + item)
+print("Your price is " + str(price))
+print("Your quantity is " + str(quantity))
+print("Your total price is " + str(price * quantity))
