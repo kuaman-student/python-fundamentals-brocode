@@ -1,0 +1,19 @@
+#validate user input exercise
+#1. username is no more than 12 characters
+#2. username must not contain spaces
+#3. username must not contain digits
+
+print('''
+1. username is no more than 12 characters
+2. username must not contain spaces
+3. username must not contain digits
+''')
+username = input("Enter your username:\t")
+if(len(username) > 12):
+    print("Username should not be more than 12 characters.")
+elif(username.count(" ") != 0):
+    print("Username should not contain any space.")
+elif(username.isalnum):
+    print("Username should not contain any number.")
+else:
+    print(f"Username : {username}, is passed.")
