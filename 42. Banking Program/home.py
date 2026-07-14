@@ -13,12 +13,12 @@ def validate(name, pin):
 
 def show_balance(name, pin, balance):
     if validate(name, pin):
-        print("\n*****************************")
+        print("\n*************************************************")
         print("      ACCOUNT DETAILS")
-        print("*****************************")
+        print("*************************************************")
         print(f"Account Holder : {name}")
         print(f"Current Balance: ₹{balance}")
-        print("*****************************")
+        print("*************************************************")
     else:
         print("Wrong PIN!")
 
@@ -42,10 +42,10 @@ def deposit(name, pin, balance, history):
     balance += amount
     history.append(amount)
 
-    print("\n******** RECEIPT ********")
+    print("\n************* RECEIPT *************")
     print(f"Deposited : ₹{amount}")
     print(f"Balance   : ₹{balance}")
-    print("*************************")
+    print("****************************************")
 
     return balance
 
@@ -80,10 +80,10 @@ def withdraw(name, pin, balance, history):
     balance -= amount
     history.append(-amount)
 
-    print("\n******** RECEIPT ********")
+    print("\n************* RECEIPT *************")
     print(f"Withdrawn : ₹{amount}")
     print(f"Balance   : ₹{balance}")
-    print("*************************")
+    print("****************************************")
 
     return balance
 
@@ -93,9 +93,9 @@ def transaction_history(name, pin, history):
         print("Wrong PIN!")
         return
 
-    print("\n*****************************")
+    print("\n*************************************************")
     print("    TRANSACTION HISTORY")
-    print("*****************************")
+    print("*************************************************")
 
     if len(history) == 0:
         print("No Transactions Yet.")
@@ -146,16 +146,16 @@ def home_page(name, pin):
     while True:
 
         print(f"""
-*****************************
+*************************************************
       Banking Program
-*****************************
+*************************************************
 1. Show Balance
 2. Deposit
 3. Withdraw
 4. Transaction History
 5. Last Transactions
 6. Exit
-*****************************
+*************************************************
 Welcome {name}
 """)
 
@@ -179,9 +179,9 @@ Welcome {name}
                 last_transactions(name, pin, history)
 
             case "6":
-                print("\n*****************************")
+                print("\n*************************************************")
                 print("Thank You For Banking With Us")
-                print("*****************************")
+                print("*************************************************")
                 print(f"Final Balance      : ₹{balance}")
                 print(f"Total Transactions : {len(history)}")
                 break
@@ -193,9 +193,9 @@ Welcome {name}
 # ---------------- MAIN ---------------- #
 
 print("""
-*****************************
+*************************************************
       Banking Program
-*****************************
+*************************************************
 Let's create your account.
 """)
 
