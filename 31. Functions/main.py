@@ -17,3 +17,11 @@ hello()
 hello_name(name)
 
 print(add(2,3))
+
+
+#  the order of arguments in Python does matter.
+# 1)Positional arguments (must come first)
+# 2)Default (Keyword) arguments
+# 3) Arbitrary positional (*args)
+# 4)Keyword-only arguments
+# 5)Arbitrary keyword (**kwargs)
