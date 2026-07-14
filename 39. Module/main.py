@@ -27,3 +27,7 @@ person1 = {
   "age": 36,
   "country": "Norway"
 }
+
+import platform
+print(platform.system())
+print(platform.platform())
