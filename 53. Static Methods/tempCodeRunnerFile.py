@@ -1,0 +1,1 @@
+Employee.is_valid_position("Judge")
