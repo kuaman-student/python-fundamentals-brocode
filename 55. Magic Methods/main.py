@@ -20,7 +20,10 @@ class Book:
         return self.num_pages > other.num_pages
 
     def __add__(self, other):
-        return
+        return self.num_pages + other.num_pages
+
+    def __contains__(self, item):
+        return item in self.title or self.author
 
 book1 = Book("A", "Author1", 12)
 book2 = Book("B", "Author2", 123)
@@ -46,3 +49,14 @@ print(book4 > book5)
 print(book4 > book3)
 print(book4 > book2)
 print(book4 > book1)
+
+
+print(book4 + book5)
+print(book4 + book3)
+print(book4 + book2)
+print(book4 + book1)
+
+
+print("C" in book3)
+print("C" in book1)
+print("C" in book4)
